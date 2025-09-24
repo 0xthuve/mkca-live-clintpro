@@ -559,6 +559,7 @@
               </p>
             </div>
           </div>
+          
 
           <!-- Coach 2 -->
           <div
@@ -827,6 +828,106 @@
         </div>
       </div>
     </section>
+
+    <!-- Achievement Section -->
+    <section class="relative z-10 py-20 px-4" id="events">
+  <div class="max-w-5xl mx-auto">
+    <h2
+      class="font-serif text-3xl md:text-4xl font-bold mb-8 text-center gradient-text"
+    >
+      Achievements
+    </h2>
+
+    <!-- Changed this to a flex container to center items -->
+    <div class="flex justify-center">
+      <!-- North Girls champion -->
+      <div
+        class="w-full max-w-md rounded-2xl shadow-lg glass-strong p-4"
+      >
+        <div
+          class="flex space-x-2 overflow-x-auto scrollbar-hide rounded-xl mb-3"
+          style="scroll-behavior: smooth"
+        >
+          <img
+            src="./asserts/Girls championship 2025/WhatsApp Image 2025-07-01 at 19.56.39_2addfa64.jpg"
+            alt="Match 1"
+            class="w-24 h-18 object-cover rounded-lg cursor-pointer"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./asserts/Girls championship 2025/WhatsApp Image 2025-07-01 at 19.56.39_c090eef2.jpg"
+            alt="Match 2"
+            class="w-24 h-18 object-cover rounded-lg cursor-pointer"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./asserts/Girls championship 2025/WhatsApp Image 2025-07-01 at 19.56.39_898613f5.jpg"
+            alt="Match 2"
+            class="w-24 h-18 object-cover rounded-lg cursor-pointer"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./asserts/Girls championship 2025/WhatsApp Image 2025-07-01 at 19.56.40_370362e0.jpg"
+            alt="Match 3"
+            class="w-24 h-18 object-cover rounded-lg cursor-pointer"
+            onclick="openModal(this.src)"
+          />
+        </div>
+        <h3
+          class="text-center font-semibold text-chess-accent"
+        >
+          <div class="text-xl md:text-xl font-bold mb-1">
+            Northern Provincial Team Chess Tournament - 2025<br />
+            Champion: Kilinochchi Girls Team
+          </div>
+          <div class="flex items-center justify-center text-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2 text-chess-accent"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            June 2025
+          </div>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-[1000]"
+    onclick="closeModal()"
+  >
+    <div class="relative max-w-4xl max-h-[90vh]">
+      <img
+        id="modalImage"
+        src=""
+        alt="Enlarged Image"
+        class="max-w-full max-h-[90vh] rounded-lg shadow-lg"
+        onclick="event.stopPropagation()"
+      />
+      <button
+        class="absolute top-6 right-6 text-white text-4xl font-bold"
+        onclick="closeModal()"
+        aria-label="Close Modal"
+      >
+        ×
+      </button>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Chess Facts Section -->
     <section class="relative z-10 py-20 px-4">
