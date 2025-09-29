@@ -303,15 +303,16 @@
                 <div class="bg-white/5 rounded-2xl p-6 mb-6">
                   <h5 class="font-serif text-lg font-bold mb-4 text-chess-accent flex items-center">
                     <i class="fas fa-video mr-2"></i>
-                    News Coverage
+                    விரிவான மீடியா கவரேஜ் - Comprehensive Media Coverage
                   </h5>
                   
-                  <div class="grid md:grid-cols-2 gap-6">
+                  <!-- Video Coverage Grid -->
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
                     <!-- Mullai Media Coverage -->
                     <div class="bg-white/5 rounded-xl p-4">
                       <h6 class="font-semibold text-chess-light mb-3 flex items-center">
                         <i class="fas fa-broadcast-tower mr-2 text-chess-accent"></i>
-                        Mullai Media Coverage
+                        Mullai Media
                       </h6>
                       <video 
                         controls 
@@ -334,7 +335,7 @@
                     <div class="bg-white/5 rounded-xl p-4">
                       <h6 class="font-semibold text-chess-light mb-3 flex items-center">
                         <i class="fas fa-newspaper mr-2 text-chess-accent"></i>
-                        DAN News Coverage
+                        DAN News
                       </h6>
                       <video 
                         controls 
@@ -352,13 +353,119 @@
                         Championship ceremony and winner announcements
                       </p>
                     </div>
+
+                    <!-- Samogam Media Coverage -->
+                    <div class="bg-white/5 rounded-xl p-4">
+                      <h6 class="font-semibold text-chess-light mb-3 flex items-center">
+                        <i class="fas fa-video mr-2 text-chess-accent"></i>
+                        Samogam Media
+                      </h6>
+                      <video 
+                        controls 
+                        class="w-full rounded-lg mb-3 shadow-lg"
+                        poster="./blog/mcc25/mcc25.webp"
+                      >
+                        <source src="./blog/mcc25/mediaclip/VID-20250929-WA0039.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <p class="text-xs text-chess-gray">
+                        <i class="fas fa-copyright mr-1"></i>
+                        <strong>Copyright:</strong> Samogam Media - சமோகம் மீடியா
+                      </p>
+                      <p class="text-xs text-chess-light/80 mt-1">
+                        Detailed tournament coverage and analysis
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Print Media Coverage -->
+                  <div class="mb-6">
+                    <h6 class="font-serif text-lg font-bold mb-4 text-chess-accent flex items-center">
+                      <i class="fas fa-newspaper mr-2"></i>
+                      அச்சு ஊடகங்கள் - Print Media Coverage
+                    </h6>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                      <!-- Mullai Murasu Newspaper -->
+                      <div class="bg-white/5 rounded-xl p-4">
+                        <h6 class="font-semibold text-chess-light mb-3 flex items-center">
+                          <i class="fas fa-newspaper mr-2 text-chess-accent"></i>
+                          Mullai Murasu - முல்லை முரசு
+                        </h6>
+                        <div class="relative">
+                          <img 
+                            src="./blog/mcc25/mediaclip/WhatsApp Image 2025-09-29 at 17.51.48_231aa470.jpg" 
+                            alt="Mullai Murasu Newspaper Coverage" 
+                            class="w-full rounded-lg mb-3 shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300" 
+                            onclick="openModal(this.src)"
+                          />
+                          <div class="absolute top-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                            <i class="fas fa-search-plus mr-1"></i>Click to enlarge
+                          </div>
+                        </div>
+                        <p class="text-xs text-chess-gray">
+                          <i class="fas fa-copyright mr-1"></i>
+                          <strong>Copyright:</strong> Mullai Murasu - முல்லை முரசு
+                        </p>
+                        <p class="text-xs text-chess-light/80 mt-1">
+                          Comprehensive print coverage of the championship
+                        </p>
+                      </div>
+
+                      <!-- Tamil Win Online Article -->
+                      <div class="bg-white/5 rounded-xl p-4">
+                        <h6 class="font-semibold text-chess-light mb-3 flex items-center">
+                          <i class="fas fa-globe mr-2 text-chess-accent"></i>
+                          Tamil Win Online
+                        </h6>
+                        <div class="bg-gradient-to-br from-chess-accent/20 to-chess-accent/10 rounded-lg p-4 mb-3 border border-chess-accent/30">
+                          <div class="text-center mb-3">
+                            <i class="fas fa-external-link-alt text-3xl text-chess-accent mb-2"></i>
+                            <p class="text-sm text-chess-light/90">விரிவான ஆன்லைன் கட்டுரை</p>
+                          </div>
+                          <a 
+                            href="https://tamilwin.com/article/mullaitivu-chess-competition-1759123557" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="block w-full bg-chess-accent text-gray-900 font-semibold py-2 px-4 rounded-md hover:bg-chess-accent-light transition-colors duration-300 text-center"
+                          >
+                            <i class="fas fa-newspaper mr-2"></i>
+                            Read Full Article
+                          </a>
+                        </div>
+                        <p class="text-xs text-chess-gray">
+                          <i class="fas fa-copyright mr-1"></i>
+                          <strong>Copyright:</strong> Tamil Win - தமிழ் வின்
+                        </p>
+                        <p class="text-xs text-chess-light/80 mt-1">
+                          Detailed online coverage and tournament analysis
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   
-                  <div class="mt-4 p-3 bg-chess-accent/10 border border-chess-accent/30 rounded-lg">
-                    <p class="text-sm text-chess-light/90">
+                  <div class="mt-4 p-4 bg-chess-accent/10 border border-chess-accent/30 rounded-lg">
+                    <p class="text-sm text-chess-light/90 mb-2">
                       <i class="fas fa-info-circle mr-2 text-chess-accent"></i>
-                      <strong>மீடியா பங்களிப்பு:</strong> இந்நிகழ்வின் வெற்றிக்கு உள்ளூர் ஊடக நிறுவனங்களின் பங்களிப்பும் முக்கியமானது. Mullai Media மற்றும் DAN News ஆகிய நிறுவனங்கள் இந்த சதுரங்க போட்டியை பரவலாக அறிவித்து, மாவட்ட மக்களின் கவனத்தை ஈர்க்க உதவின.
+                      <strong>மீடியா பங்களிப்பு:</strong> இந்நிகழ்வின் வெற்றிக்கு உள்ளூர் மற்றும் தேசிய ஊடக நிறுவனங்களின் பங்களிப்பும் முக்கியமானது.
                     </p>
+                    <div class="grid md:grid-cols-2 gap-4 text-xs text-chess-light/80">
+                      <div>
+                        <p><strong class="text-chess-accent">வீடியோ கவரேஜ்:</strong></p>
+                        <ul class="ml-4 space-y-1">
+                          <li>• Mullai Media - முல்லை மீடியா</li>
+                          <li>• DAN News</li>
+                          <li>• Samogam Media - சமோகம் மீடியா</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p><strong class="text-chess-accent">அச்சு & ஆன்லைன்:</strong></p>
+                        <ul class="ml-4 space-y-1">
+                          <li>• Mullai Murasu - முல்லை முரசு</li>
+                          <li>• Tamil Win - தமிழ் வின்</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 
